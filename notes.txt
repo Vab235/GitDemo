@@ -1,2 +1,1 @@
-sg2323
-ssa
+Video 12: use "git restore --staged <file>" to unstage a file (This commands unstages a staged file, this command is shown in git bash if a file is staged and git status command is run) 
