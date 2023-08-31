@@ -1,1 +1,16 @@
-Video 12: use "git restore --staged <file>" to unstage a file (This commands unstages a staged file, this command is shown in git bash if a file is staged and git status command is run) 
+Video 12: 
+use "git restore --staged <file>" to unstage a file 	(This commands unstages a staged file, this command is shown in git bash if a file is staged and git status command is run) 
+
+git checkout -- <file> 		(This command can unmodify a modified file, in literal sense this means it will bring back the file to the last committed state and removes all the modifications)
+
+git checkout -f		(This command will remove all the modifications done in all the files and brings back the folder (working directory) to the previous committed state)
+
+a security feature of Git to avoid unexpected removal of modifications while using checkout: 	If the modified file is staged (git add .) and git checkout command is run then that the modifications won't be removed, the modifications will be removed only when the files are not staged.
+
+Video 13:
+Pull: Bring code from Github to your desktop, the whole code will be brought to your desktop
+Push: Push code from computer to
+ Github repository in incremental phase, only those things will be uploaded which the usesr wants
+Remote: website hosting our repository, ex: Github, Gitlabs, Bitbucket, etc
+
+git remote -v (returns 2 URL one for pull and other push)
