@@ -13,4 +13,15 @@ Push: Push code from computer to
  Github repository in incremental phase, only those things will be uploaded which the usesr wants
 Remote: website hosting our repository, ex: Github, Gitlabs, Bitbucket, etc
 
-git remote -v (returns 2 URL one for pull and other push)
+git remote (returns the name of remote repository if present, otherwise it will return nothing)
+git remote -v (returns 2 URL one for pull and other for push)
+git remote add "name of URL" git@github.com:"account name / "repository name on github".git" (add a remote URL whose name is origin)
+
+git push -u "name of URL" master (Push repository to github)
+
+How to generate SSH keys:
+ssh-keygen -t rsa -b 4096 -C "email id"
+eval $(ssh-agent -s)  (To check whether ssh agent is running or not)
+ssh-add ~/.ssh/id_rsa  (add private key in ssh agent)
+tail ~/.ssh/id_rsa.pub  (This command will give the key)
+Then copy the key in github SSH, this will give us the access to push repository to Github
